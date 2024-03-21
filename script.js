@@ -1,3 +1,3 @@
 function iniciar(){
-  location.href=preguntas.html;
+  location.href="preguntas.html";
 }
