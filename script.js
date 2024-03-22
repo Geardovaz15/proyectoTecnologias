@@ -5,9 +5,7 @@ function iniciar(){
 let respuestas=[];
 
 function resultado(pregunta, respuesta){
-
   respuestas[pregunta]= respuesta.value;
-
 }
 
 function calcular(){
@@ -18,17 +16,17 @@ function calcular(){
   
     for(i=0;i<=4;i++){
     switch(respuestas[i]){
-      case 1:
+      case "1":
         humanidades++;
         break;
-      case 2:
+      case "2":
         ciencias ++;
         break;
-      case 3:
+      case "3":
         psyco++;
         break;
       default:
-        console.log("responde no seas wey ${i}");
+        console.log("responde no seas wey ",humanidades);
     }
   }
   if(humanidades>ciencias && humanidades>psyco){
