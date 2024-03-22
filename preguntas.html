@@ -1,1 +1,75 @@
-<p>Usted ha probado los psicotropicos</p>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <h1>Test para elegir carrera</h1>
+    <p>Responde segun tus intereses</p>
+  </header>
+  
+  <div class="container">
+    <section id="p0">
+      <h3>1-¿Te gusta mas los objetos o las personas?</h3>
+      <label>
+        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Las personas
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Los objetos
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Indiferente
+      </label>
+    </section>
+        <section id="p1">
+      <h3>2-¿Te gusta leer?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Si, mucho
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> Solo lo indispensable
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> No me gusta
+      </label>
+    </section>
+        <section id="p2">
+      <h3>3-¿Que piensas de las matematicas?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Solo lo indispensable
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Me gustan los retos
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> No las entiendo
+      </label>
+    </section>
+        <section id="p3">
+      <h3>4-Si un barco se unde ¿a quien salvas?</h3>
+      <label>
+        <input type="radio" value="1" name="p3" onclick="resultado(3,this)"> Perros o niños
+      </label>
+      <label>1
+        <input type="radio" value="2" name="p3" onclick="resultado(3,this)"> Adultos y tripulacion
+      </label>
+      <label>
+        <input type="radio" value="2" name="p3" onclick="resultado(3,this)"> Solo a mi
+      </label>
+    </section>
+        <section id="p4">
+      <h3>5-¿Jamaica u orcharta?</h3>
+      <label>
+        <input type="radio" value="1" name="p4" onclick="resultado(4,this)"> Las dos son muy buenas
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="resultado(4,this)"> Orchata
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="resultado(4,this)"> Tengo problemas
+      </label>
+    </section>
+    <button onclick="calcular()">Ver resultados</button>
+  </div>
+</body>
+<script src="script.js"></script>
