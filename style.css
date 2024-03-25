@@ -2,6 +2,7 @@
   width: 100%;
   display: block;
   margin-bottom: 5px;
+  background-color: #4CAF50;
   border: none; 
   color: white; 
   padding: 14px 28px; 
@@ -10,9 +11,9 @@
 }
 
 .my-button:hover {
-  background-color: #45a049;
+  background-color: #46a049;
 }
 
 .my-button:active {
-  background-color: #3e8e41;
+  background-color: #04AA6D;
 }
