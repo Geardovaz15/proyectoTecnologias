@@ -1,3 +1,15 @@
+
+*{
+  boxsizing: border-box;
+  font-family:'Balsamic Sans';
+  
+  
+}
+header{
+  text-align:center;
+  background: #000;
+  color:#fff
+}
 .my-button {
   width: 100%;
   display: block;
@@ -16,4 +28,26 @@
 
 .my-button:active {
   background-color: #04AA6D;
+}
+
+.container{
+  max-width:700px;
+  margin:auto;
+  padding: 20px;
+  background-color:#ddd;
+}
+
+section{
+  border: 5px solid #007bff;
+  border-radius: 7px;
+  padding:10px;
+  margin: 10px;
+  background-color: #e3f1f1;
+}
+
+label{
+  display:block;
+  padding:7px;
+  border-radius:7px;
+  cursor:pointer;
 }
