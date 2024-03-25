@@ -2,6 +2,10 @@ function iniciar(){
   location.href="preguntas.html";
 }
 
+function home(){
+  location.href="index.html.";
+}
+
 let respuestas=[];
 
 function resultado(pregunta, respuesta){
