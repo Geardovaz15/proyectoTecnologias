@@ -3,7 +3,7 @@ function iniciar(){
 }
 
 function home(){
-  location.href="history.go(-1)";
+  location.href="index.html";
 }
 
 let respuestas=[];
