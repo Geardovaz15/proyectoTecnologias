@@ -1,9 +1,10 @@
+/* Generales (afectan a todos los objetos) */
 body{
   boxsizing: border-box;
   font-family: sans-serif;
   margin: 0;
-  
 }
+
 header{
   text-align:center;
   min-height: 80px;
@@ -11,14 +12,35 @@ header{
   color:#fff;
   padding: 20px;
 }
+
+label{
+  display:block;
+  padding:7px;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+section{
+  border: 2px solid #648ca4;
+  border-radius: 3px;
+  padding:10px;
+  margin: 20px;
+  background-color: #eae9ef;
+  text-align:center;
+  color: #293a52;
+  display:0;
+}
+
+/* Espesificos (afectan a solo algunos obetos para hacer que se vean mejor) */
 .my-button {
   width: 100%;
   display: block;
   margin-bottom: 5px;
   background-color: #4CAF50;
   border: none; 
-  color: white; 
-  padding: 40px 28px; 
+  color: white;
+  font-size:35px;
+  padding: 40px 35px; 
   cursor: pointer; 
   border-radius: 5px; 
 }
@@ -38,21 +60,24 @@ header{
   background-color:#ddd;
 }
 
-section{
+.introduccion{
   border: 2px solid #648ca4;
   border-radius: 3px;
   padding:10px;
   margin: 20px;
   background-color: #eae9ef;
+  text-align:center;
   color: #293a52;
   display:0;
-  
 }
 
-label{
-  display:block;
-  padding:7px;
-  border-radius:7px;
-  cursor:pointer;
+.titulo{
+  font-size:35px;
 }
+
+.cuerpo{
+  color:#8a9198;
+  font-size:20px;
+}
+
 
