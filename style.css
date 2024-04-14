@@ -1,14 +1,15 @@
-
-*{
+body{
   boxsizing: border-box;
-  font-family:'Balsamic Sans';
-  
+  font-family: sans-serif;
+  margin: 0;
   
 }
 header{
   text-align:center;
-  background: #000;
-  color:#fff
+  min-height: 80px;
+  background: #2a3947;
+  color:#fff;
+  padding: 20px;
 }
 .my-button {
   width: 100%;
@@ -31,18 +32,21 @@ header{
 }
 
 .container{
-  max-width:700px;
+  max-width:flex;
   margin:auto;
   padding: 20px;
   background-color:#ddd;
 }
 
 section{
-  border: 5px solid #007bff;
-  border-radius: 7px;
+  border: 2px solid #648ca4;
+  border-radius: 3px;
   padding:10px;
-  margin: 10px;
-  background-color: #e3f1f1;
+  margin: 20px;
+  background-color: #eae9ef;
+  color: #293a52;
+  display:0;
+  
 }
 
 label{
