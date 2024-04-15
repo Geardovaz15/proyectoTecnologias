@@ -1,3 +1,4 @@
+//funciones para referir a links
 function iniciar(){
   location.href="preguntas.html";
 }
@@ -13,6 +14,15 @@ function cuceiW(){
   location.href="http://www.cucei.udg.mx/";
 }
 
+function udgF(){
+  location.href="https://www.facebook.com/udg.mx/?locale=es_LA";
+}
+function udgW()(){
+  location.href="https://www.udg.mx/es";
+}
+
+
+//funciones para calcular resultados
 let respuestas=[];
 
 function resultado(pregunta, respuesta){
