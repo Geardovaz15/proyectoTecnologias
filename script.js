@@ -1,6 +1,6 @@
 //funciones para referir a links
 function iniciar(){
-  location.href="preguntas.html";
+  location.href="preguntas1.html";
 }
 
 function home(){
