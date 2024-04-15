@@ -6,6 +6,13 @@ function home(){
   location.href="index.html";
 }
 
+function cuceiF(){
+  location.href="https://www.facebook.com/udegcucei/?locale=es_LA";
+}
+function cuceiW(){
+  location.href="http://www.cucei.udg.mx/";
+}
+
 let respuestas=[];
 
 function resultado(pregunta, respuesta){
