@@ -17,7 +17,7 @@ function cuceiW(){
 function udgF(){
   location.href="https://www.facebook.com/udg.mx/?locale=es_LA";
 }
-function udgW()(){
+function udgW(){
   location.href="https://www.udg.mx/es";
 }
 
