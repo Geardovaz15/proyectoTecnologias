@@ -21,6 +21,10 @@ function cuceaW(){
   location.href="https://www.cucea.udg.mx/";
 }
 
+function cucshW(){
+  location.href="http://www.cucsh.udg.mx/";
+}
+
 function udgF(){
   location.href="https://www.facebook.com/udg.mx/?locale=es_LA";
 }
