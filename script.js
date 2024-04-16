@@ -30,33 +30,98 @@ function resultado(pregunta, respuesta){
 }
 
 function calcular(){
-    let humanidades=0;
-    let ciencias=0;
-    let psyco=0;
-
+    let Der=0;
+    let Izq=0;
   
     for(i=0;i<=4;i++){
     switch(respuestas[i]){
       case "1":
-        humanidades++;
+        Der++;
         break;
       case "2":
-        ciencias ++;
-        break;
-      case "3":
-        psyco++;
+        Izq++;
         break;
       default:
-        console.log("responde no seas wey ",humanidades);
+        console.log("al chile no se porque imprime esto");
     }
   }
-  if(humanidades>ciencias && humanidades>psyco){
-    location.href="humani.html";
+  if(Der>Izq){
+    return "D";
   }
-  else if(ciencias>humanidades && ciencias>psyco){
-    location.href="cienc.html";
+  else if(Izq>Der){
+    return "I";
   }
-  else if(psyco>ciencias && psyco>humanidades){
-    location.href="psyco.html";
-   }
 }
+
+function llevar1(){
+  if (calcular()=="D"){
+    location.href="preguntas2.html";
+  }
+  else{
+    location.href="preguntas3.html";
+  }
+}
+
+function llevar2(){
+  if (calcular()=="D"){
+    location.href="preguntas4.html";
+  }
+  else{
+    location.href="nodef.html";
+  }
+}
+
+function llevar3(){
+  if (calcular()=="D"){
+    location.href="preguntas7.html";
+  }
+  else{
+    location.href="preguntas8.html";
+  }
+}
+
+function llevar4(){
+  if (calcular()=="D"){
+    location.href="preguntas5.html";
+  }
+  else{
+    location.href="preguntas6.html";
+  }
+}
+
+function llevar5(){
+  if (calcular()=="D"){
+    location.href="infinc.html";
+  }
+  else{
+    location.href="robele.html";
+  }
+}
+
+function llevar6(){
+  if (calcular()=="D"){
+    location.href="mate.html";
+  }
+  else{
+    location.href="fisi.html";
+  }
+}
+
+function llevar7(){
+  if (calcular()=="D"){
+    location.href="nodef.html";
+  }
+  else{
+    location.href="nodef.html";
+  }
+}
+
+function llevar8(){
+  if (calcular()=="D"){
+    location.href="nodef.html";
+  }
+  else{
+    location.href="nodef.html";
+  }
+}
+
