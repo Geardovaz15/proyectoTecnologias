@@ -47,10 +47,10 @@ function calcular(){
     for(i=0;i<=4;i++){
     switch(respuestas[i]){
       case "1":
-        Der++;
+        Izq++;
         break;
       case "2":
-        Izq++;
+        Der++;
         break;
       default:
         console.log("al chile no se porque imprime esto");
@@ -65,7 +65,7 @@ function calcular(){
 }
 
 function llevar1(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="preguntas2.html";
   }
   else{
@@ -74,7 +74,7 @@ function llevar1(){
 }
 
 function llevar2(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="preguntas4.html";
   }
   else{
@@ -83,7 +83,7 @@ function llevar2(){
 }
 
 function llevar3(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="preguntas7.html";
   }
   else{
@@ -92,7 +92,7 @@ function llevar3(){
 }
 
 function llevar4(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="preguntas5.html";
   }
   else{
@@ -101,7 +101,7 @@ function llevar4(){
 }
 
 function llevar5(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="infinc.html";
   }
   else{
@@ -110,7 +110,7 @@ function llevar5(){
 }
 
 function llevar6(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="mate.html";
   }
   else{
@@ -119,7 +119,7 @@ function llevar6(){
 }
 
 function llevar7(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="merc.html";
   }
   else{
@@ -128,7 +128,7 @@ function llevar7(){
 }
 
 function llevar8(){
-  if (calcular()=="D"){
+  if (calcular()=="I"){
     location.href="turi.html";
   }
   else{
