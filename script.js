@@ -120,19 +120,19 @@ function llevar6(){
 
 function llevar7(){
   if (calcular()=="D"){
-    location.href="nodef.html";
+    location.href="merc.html";
   }
   else{
-    location.href="nodef.html";
+    location.href="dere.html";
   }
 }
 
 function llevar8(){
   if (calcular()=="D"){
-    location.href="nodef.html";
+    location.href="turi.html";
   }
   else{
-    location.href="nodef.html";
+    location.href="cont.html";
   }
 }
 
