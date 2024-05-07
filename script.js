@@ -64,75 +64,74 @@ function calcular(){
   }
 }
 
-function llevar1(){
-  if (calcular()=="I"){
-    location.href="preguntas2.html";
-  }
-  else{
-    location.href="preguntas3.html";
+function llevar(){
+  switch(actual){
+    case 1:
+      if (calcular()=="I"){
+        location.href="preguntas2.html";
+        }
+      else{
+        location.href="preguntas3.html";
+        }
+      break;
+    case 2:
+      if (calcular()=="I"){
+        location.href="preguntas4.html";
+      }
+      else{
+        location.href="nodef.html";
+      }
+      break;
+    case 3:
+      if (calcular()=="I"){
+        location.href="preguntas7.html";
+      }
+      else{
+        location.href="preguntas8.html";
+      }
+      break;
+    case 4:
+      if (calcular()=="I"){
+        location.href="preguntas5.html";
+      }
+      else{
+        location.href="preguntas6.html";
+      }
+      break;
+    case 5:
+      if (calcular()=="I"){
+        location.href="infinc.html";
+      }
+      else{
+        location.href="robele.html";
+      }
+      break;
+    case 6:
+      if (calcular()=="I"){
+        location.href="mate.html";
+      }
+      else{
+        location.href="fisi.html";
+      }
+      break;
+    case 7:
+      if (calcular()=="I"){
+        location.href="merc.html";
+      }
+      else{
+        location.href="dere.html";
+      }
+      break;
+    case 8:
+      if (calcular()=="I"){
+        location.href="turi.html";
+      }
+      else{
+        location.href="cont.html";
+      }
+      break;
+    default:
+      console.log("No existe el numero que mandaste de referencia");
+      break;
   }
 }
-
-function llevar2(){
-  if (calcular()=="I"){
-    location.href="preguntas4.html";
-  }
-  else{
-    location.href="nodef.html";
-  }
-}
-
-function llevar3(){
-  if (calcular()=="I"){
-    location.href="preguntas7.html";
-  }
-  else{
-    location.href="preguntas8.html";
-  }
-}
-
-function llevar4(){
-  if (calcular()=="I"){
-    location.href="preguntas5.html";
-  }
-  else{
-    location.href="preguntas6.html";
-  }
-}
-
-function llevar5(){
-  if (calcular()=="I"){
-    location.href="infinc.html";
-  }
-  else{
-    location.href="robele.html";
-  }
-}
-
-function llevar6(){
-  if (calcular()=="I"){
-    location.href="mate.html";
-  }
-  else{
-    location.href="fisi.html";
-  }
-}
-
-function llevar7(){
-  if (calcular()=="I"){
-    location.href="merc.html";
-  }
-  else{
-    location.href="dere.html";
-  }
-}
-
-function llevar8(){
-  if (calcular()=="I"){
-    location.href="turi.html";
-  }
-  else{
-    location.href="cont.html";
-  }
-}
-
