@@ -143,12 +143,14 @@ function llevar(){
       else{
         location.href="cont.html";
       }
+      break;
       case 9:
       if (calcular()=="I"){
         location.href="preguntas10.html";
       }
       else{
-        location.href="preguntas11.html.html";
+            location.href="preguntas11.html.html";
+      }
       break;
       case 10:
       if (calcular()=="I"){
@@ -157,7 +159,7 @@ function llevar(){
       else{
         location.href="quim.html";
       }
-
+      break;
       case 11:
       if (calcular()=="I"){
         location.href="nodef.html";
@@ -165,6 +167,7 @@ function llevar(){
       else{
         location.href="arte.html";
       }
+     break;
     default:
       console.log("No existe el numero que mandaste de referencia");
       break;
