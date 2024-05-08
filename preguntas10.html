@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <h1>Test para elegir carrera</h1>
+    <p>Responde segun tus intereses</p>
+  </header>
+  
+  <div class="container">
+    <section id="p0">
+      <h3>sample</h3>
+      <label>
+        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> sample 
+      </label>
+      <label>
+        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> sample
+      </label>
+    </section>
+        <section id="p1">
+      <h3>sample</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> sample
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> sample
+      </label>
+    </section>
+        <section id="p2">
+          
+      <h3>sample</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> sample
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> sample
+      </label>
+
+    </section>
+    <button class="my-button" onclick="llevar(6)">Continuar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
