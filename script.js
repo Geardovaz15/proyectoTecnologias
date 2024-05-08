@@ -93,7 +93,7 @@ function llevar(){
         location.href="preguntas4.html";
       }
       else{
-        location.href="nodef.html";
+        location.href="preguntas9.html";
       }
       break;
     case 3:
@@ -143,7 +143,28 @@ function llevar(){
       else{
         location.href="cont.html";
       }
+      case 9:
+      if (calcular()=="I"){
+        location.href="preguntas10.html";
+      }
+      else{
+        location.href="preguntas11.html.html";
       break;
+      case 10:
+      if (calcular()=="I"){
+        location.href="medi.html";
+      }
+      else{
+        location.href="quim.html";
+      }
+
+      case 11:
+      if (calcular()=="I"){
+        location.href="nodef.html";
+      }
+      else{
+        location.href="arte.html";
+      }
     default:
       console.log("No existe el numero que mandaste de referencia");
       break;
