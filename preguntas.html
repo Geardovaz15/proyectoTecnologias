@@ -71,10 +71,10 @@
         <input type="radio" value="3" name="p4" onclick="resultado(4,this)"> Tengo problemas
       </label>
     </section>
-    <button class="my-button" onclick="calcular()">Ver resultados</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
   </div>
   <script src="script.js"></script>
-    <script>
+  <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
       var radios1 = document.getElementsByName('p1');
