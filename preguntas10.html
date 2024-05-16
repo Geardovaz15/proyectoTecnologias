@@ -43,4 +43,19 @@
     <button class="my-button" onclick="llevar(10)">Continuar</button>
   </div>
   <script src="script.js"></script>
+    <script>
+    function check() {
+      var radios0 = document.getElementsByName('p0');
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
+
+      var isChecked0 = Array.from(radios0).some(radio => radio.checked);
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
+
+      if (isChecked0 && isChecked1 && isChecked2) {
+        document.getElementById("continueButton").disabled = false;
+      }
+    }
+  </script>
 </body>
