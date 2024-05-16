@@ -12,35 +12,49 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1-Si te dan un papel y un lapiz ¿Qué haces?</h3>
+      <h3>1- En el caso de que te den un papel, ¿usted que haria?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Dibujar 
+        <input type="radio" value="1" name="p0" onclick="check()"> Dibujar 
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Escribir
+        <input type="radio" value="2" name="p0" onclick="check()"> Escribir
       </label>
     </section>
-        <section id="p1">
+    <section id="p1">e
       <h3>2-Cuando buscas informacion ¿vas directamente a lo que necesitas o lees el articulo completo?</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> voy directamente a lo que necesito
+        <input type="radio" value="1" name="p1" onclick="check()"> voy directamente a lo que necesito
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> me gusta perderme en la lectura
+        <input type="radio" value="2" name="p1" onclick="check()"> me gusta perderme en la lectura
       </label>
     </section>
-        <section id="p2">
-          
+    <section id="p2">
       <h3>3-Cuando trabajas en equipo ¿Qué haces?</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Participo de forma pasiva y acato ordenes
+        <input type="radio" value="1" name="p2" onclick="check()"> Participo de forma pasiva y acato ordenes
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Tomo el liderazgo e intento hacer que todos participen
+        <input type="radio" value="2" name="p2" onclick="check()"> Tomo el liderazgo e intento hacer que todos participen
       </label>
-
     </section>
-    <button class="my-button" onclick="llevar(1)">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
   </div>
   <script src="script.js"></script>
+  <script>
+    function check() {
+      var radios0 = document.getElementsByName('p0');
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
+
+      var isChecked0 = Array.from(radios0).some(radio => radio.checked);
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
+
+      if (isChecked0 && isChecked1 && isChecked2) {
+        document.getElementById("continueButton").disabled = false;
+      }
+    }
+  </script>
 </body>
+</html>
