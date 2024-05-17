@@ -80,12 +80,26 @@ function calcular(){
        case "7":
         totales[6]=totales[6]+1;
         break;
+       case "8":
+        totales[7]=totales[7]+1;
+        break;
+       case "9":
+        totales[8]=totales[8]+1;
+        break;
+       case "10":
+        totales[9]=totales[9]+1;
+        break;
+       case "11":
+        totales[10]=totales[10]+1;
+        break;
+        
       default:
         console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
       }
     }
     llevar();
 }
+
 function elegir(){
   let sig=0;
   let pre= "preguntas";
@@ -104,8 +118,23 @@ function decidir(){
       case "1":
         location.href="quim.html";
         break;
+      case "2":
+        location.href="arte.html";
+        break;
+      case "3":
+        location.href="cont.html";
+        break;
+      case "4":
+        location.href="dere.html";
+        break;
+      case "5":
+        location.href="fisi.html";
+        break;
+      case "6":
+        location.href="infinc.html";
+        break;
       default:
-        console.log("Algo pasó en el calculo de las preguntas");
+        location.href="nodef.html";
     }
   }
 }
