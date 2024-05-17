@@ -1,5 +1,3 @@
-<!-- Pon dentro del parentesis el numero del cuadro negro  (    ) -->
-<!-- Tambien pon el si la respuesta conduce a la derecha o izquierda en el diagrama con que pongas D o I es suficiente -->
 <!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,33 +14,31 @@
     <section id="p0">
       <h3>¿Te interesan los negocios, la economía o la administración?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> No
+        <input type="radio" value="1" name="p0" onchange="check()"> Si 
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Si
+        <input type="radio" value="2" name="p0" onchange="check()"> No
       </label>
     </section>
-        <section id="p1">
-      <h3>¿¿Cómo manejas la necesidad de usar matemáticas en tu vida diaria o trabajo?</h3>
+    <section id="p1">
+      <h3>¿Prefieres un ambiente universitario más orientado hacia la gestión empresarial y financiera?</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Trato de minimizar la necesidad de usar matemáticas
+        <input type="radio" value="1" name="p1" onchange="check()"> Si
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> No es algo que disfrute, pero no me impide hacer lo que necesito
+        <input type="radio" value="2" name="p1" onchange="check()"> No
       </label>
     </section>
-        <section id="p2">
-          
+    <section id="p2">
       <h3>¿Te gustaría explorar carreras como administración, contaduría o economía?</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> No
+        <input type="radio" value="1" name="p2" onchange="check()"> Si
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Si
+        <input type="radio" value="2" name="p2" onchange="check()"> No
       </label>
-
     </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
@@ -57,7 +53,8 @@
 
       if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
-      }
+      } 
     }
   </script>
 </body>
+
