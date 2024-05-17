@@ -61,34 +61,64 @@ function calcular(){
     for(i=0;i<=respuestas.length;i++){
     switch(respuestas[i]){
       case "1":
-        totales[0]=totales[0]+1;
+        if(totales[0]==null){
+          totales[0]=0;
+        }
+        totales[0]+=1;
         break;
       case "2":
-        totales[1]=totales[1]+1;
+        if(totales[1]==null){
+          totales[1]=0;
+        }
+        totales[1]+=1;
         break;
        case "3":
-        totales[2]=totales[2]+1;
+        if(totales[2]==null){
+          totales[2]=0;
+        }
+        totales[2]+=1;
         break;
        case "4":
-        totales[3]=totales[3]+1;
+        if(totales[3]==null){
+          totales[3]=0;
+        }
+        totales[3]+=1;
         break;
        case "5":
-        totales[4]=totales[4]+1;
+        if(totales[4]==null){
+          totales[4]=0;
+        }
+        totales[4]+=1;
         break;
        case "6":
-        totales[5]=totales[5]+1;
+        if(totales[5]==null){
+          totales[5]=0;
+        }
+        totales[5]+=1;
         break;
        case "7":
-        totales[6]=totales[6]+1;
+        if(totales[6]==null){
+          totales[6]=0;
+        }
+        totales[6]+=1;
         break;
        case "8":
-        totales[7]=totales[7]+1;
+        if(totales[7]==null){
+          totales[7]=0;
+        }
+        totales[7]+=1;
         break;
        case "9":
-        totales[8]=totales[8]+1;
+        if(totales[8]==null){
+          totales[8]=0;
+        }
+        totales[8]+=1;
         break;
        case "10":
-        totales[9]=totales[9]+1;
+        if(totales[9]==null){
+          totales[9]=0;
+        }
+        totales[9]+=1;
         break;
       default:
         console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
@@ -116,34 +146,34 @@ function decidir(){
     }
   }
     switch(posMayor){
-      case "1":
+      case 0:
         location.href="quim.html";
         break;
-      case "2":
+      case 1:
         location.href="arte.html";
         break;
-      case "3":
+      case 2:
         location.href="cont.html";
         break;
-      case "4":
+      case 3:
         location.href="dere.html";
         break;
-      case "5":
+      case 4:
         location.href="fisi.html";
         break;
-      case "6":
+      case 5:
         location.href="infinc.html";
         break;
-       case "7":
+       case 6:
         location.href="medi.html";
         break;
-       case "8":
+       case 7:
         location.href="merc.html";
         break;
-       case "9":
+       case 8:
         location.href="robele.html";
         break;
-       case "10":
+       case 9:
         location.href="turi.html";
         break;
       default:
@@ -166,7 +196,7 @@ function llevar(){
   pika[j+1]=llev;
   con++;
   llev=llev.concat(".html");
-  if(con==7){
+  if(con==5){
     decidir();
   }
   else{
