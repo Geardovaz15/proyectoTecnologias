@@ -12,33 +12,43 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1- En el caso de que te den un papel, ¿usted que haria?</h3>
+      <h3>1- ¿Qué actividad te resulta más atractiva o interesante?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="check()"> Dibujar 
+        <input type="radio" value="1" name="p0" onclick="check();resultado(0,this);"> Experimentar en un laboratorio y entender la composición de las cosas
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="check()"> Escribir
+        <input type="radio" value="2" name="p0" onclick="check();resultado(0,this);"> Expresar emociones y pensamientos a través de la creación artística
+      </label>
+      <label>
+        <input type="radio" value="3" name="p0" onclick="check();resultado(0,this);"> Manejar y analizar datos financieros
+      </label>
+      <label>
+        <input type="radio" value="4" name="p0" onclick="check();resultado(0,this);"> Analizar y resolver problemas legales
+      </label>
+      <label>
+        <input type="radio" value="5" name="p0" onclick="check();resultado(0,this);"> Investigar las leyes fundamentales del universo
+      </label>
+      <label>
+        <input type="radio" value="6" name="p0" onclick="check();resultado(0,this);"> Analizar datos
+      </label>
+      <label>
+        <input type="radio" value="7" name="p0" onclick="check();resultado(0,this);"> Ayudar a las personas
+      </label>
+      <label>
+      <input type="radio" value="8" name="p0" onclick="check();resultado(0,this);"> Crear estrategias para promover productos
+      </label>
+      <label>
+        <input type="radio" value="9" name="p0" onclick="check();resultado(0,this);"> Diseñar y construir robots
+      </label>
+      <label>
+        <input type="radio" value="10" name="p0" onclick="check();resultado(0,this);"> Explorar nuevas culturas
+      </label>
+      <label>
+        <input type="radio" value="11" name="p0" onclick="check();resultado(0,this);"> Ninguna de las anteriores
       </label>
     </section>
-    <section id="p1">
-      <h3>2-Cuando buscas informacion ¿vas directamente a lo que necesitas o lees el articulo completo?</h3>
-      <label>
-        <input type="radio" value="1" name="p1" onclick="check()"> voy directamente a lo que necesito
-      </label>
-      <label>
-        <input type="radio" value="2" name="p1" onclick="check()"> me gusta perderme en la lectura
-      </label>
-    </section>
-    <section id="p2">
-      <h3>3-Cuando trabajas en equipo ¿Qué haces?</h3>
-      <label>
-        <input type="radio" value="1" name="p2" onclick="check()"> Participo de forma pasiva y acato ordenes
-      </label>
-      <label>
-        <input type="radio" value="2" name="p2" onclick="check()"> Tomo el liderazgo e intento hacer que todos participen
-      </label>
-    </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
+    
+    <button class="my-button" id="continueButton" disabled onclick="calcular()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
