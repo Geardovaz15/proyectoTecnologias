@@ -1,6 +1,6 @@
 //funciones para referir a links
 function iniciar(){
-  location.href="preguntas1.html";
+  llevar();
 }
 
 function home(){
@@ -49,127 +49,86 @@ function udgW(){
 
 //funciones para calcular resultados
 let respuestas=[];
+let totales=[];
+let pika=[];
 
 function resultado(pregunta, respuesta){
   respuestas[pregunta]= respuesta.value;
 }
 
 function calcular(){
-    let Der=0;
-    let Izq=0;
-  
-    for(i=0;i<=4;i++){
+    for(i=0;i<=respuestas.length;i++){
     switch(respuestas[i]){
       case "1":
-        Izq++;
+        totales[0]=totales[0]+1;
         break;
       case "2":
-        Der++;
+        totales[1]=totales[1]+1;
+        break;
+       case "3":
+        totales[2]=totales[2]+1;
+        break;
+       case "4":
+        totales[3]=totales[3]+1;
+        break;
+       case "5":
+        totales[4]=totales[4]+1;
+        break;
+       case "6":
+        totales[5]=totales[5]+1;
+        break;
+       case "7":
+        totales[6]=totales[6]+1;
         break;
       default:
-        console.log("al chile no se porque imprime esto");
+        console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
+      }
     }
-  }
-  if(Der>Izq){
-    return "D";
-  }
-  else if(Izq>Der){
-    return "I";
+    llevar();
+}
+function elegir(){
+  let sig=0;
+  let pre= "preguntas";
+  sig=Math.floor(Math.random() * 12);
+  pre=pre.concat(sig);
+  return pre;
+}
+
+function decidir(){
+  for (let i = 1; i < totales.length; i++) {
+    if (totales[i] > mayor) {
+        mayor = totales[i];
+        posMayor = i;
+    }
+    switch(posMayor){
+      case "1":
+        location.href="quim.html";
+        break;
+      default:
+        console.log("Algo pasó en el calculo de las preguntas");
+    }
   }
 }
 
 function llevar(){
-  switch(actual){
-    case 1:
-      if (calcular()=="I"){
-        location.href="preguntas2.html";
-        }
-      else{
-        location.href="preguntas3.html";
-        }
-      break;
-    case 2:
-      if (calcular()=="I"){
-        location.href="preguntas4.html";
-      }
-      else{
-        location.href="preguntas9.html";
-      }
-      break;
-    case 3:
-      if (calcular()=="I"){
-        location.href="preguntas7.html";
-      }
-      else{
-        location.href="preguntas8.html";
-      }
-      break;
-    case 4:
-      if (calcular()=="I"){
-        location.href="preguntas5.html";
-      }
-      else{
-        location.href="preguntas6.html";
-      }
-      break;
-    case 5:
-      if (calcular()=="I"){
-        location.href="infinc.html";
-      }
-      else{
-        location.href="robele.html";
-      }
-      break;
-    case 6:
-      if (calcular()=="I"){
-        location.href="mate.html";
-      }
-      else{
-        location.href="fisi.html";
-      }
-      break;
-    case 7:
-      if (calcular()=="I"){
-        location.href="merc.html";
-      }
-      else{
-        location.href="dere.html";
-      }
-      break;
-    case 8:
-      if (calcular()=="I"){
-        location.href="turi.html";
-      }
-      else{
-        location.href="cont.html";
-      }
-      break;
-      case 9:
-      if (calcular()=="I"){
-        location.href="preguntas10.html";
-      }
-      else{
-            location.href="preguntas11.html.html";
-      }
-      break;
-      case 10:
-      if (calcular()=="I"){
-        location.href="medi.html";
-      }
-      else{
-        location.href="quim.html";
-      }
-      break;
-      case 11:
-      if (calcular()=="I"){
-        location.href="nodef.html";
-      }
-      else{
-        location.href="arte.html";
-      }
-     break;
-    default:
-      console.log("No existe el numero que mandaste de referencia");
-      break;
+  let con=0;
+  llev=elegir();
+  console.log(llev);
+  while(checar()!=0){
+    llev=elegir();
+  }
+  console.log(llev);
+  let j=0;
+  while(j<=pika.length){
+    j++;
+  }
+  pika[j+1]=llev;
+  con++;
+  llev=llev.concat(".html");
+  if(con==7){
+    decidir();
+  }
+  else{
+    location.href=llev;
   }
 }
