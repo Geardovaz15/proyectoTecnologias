@@ -89,16 +89,13 @@ function calcular(){
        case "10":
         totales[9]=totales[9]+1;
         break;
-       case "11":
-        totales[10]=totales[10]+1;
-        break;
-        
       default:
         console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
       }
     }
     llevar();
 }
+
 
 function elegir(){
   let sig=0;
@@ -108,6 +105,12 @@ function elegir(){
   return pre;
 }
 
+function decidir(){
+  for (let i = 1; i < totales.length; i++) {
+    if (totales[i] > mayor) {
+        mayor = totales[i];
+        posMayor = i;
+    }
 function decidir(){
   for (let i = 1; i < totales.length; i++) {
     if (totales[i] > mayor) {
@@ -132,6 +135,18 @@ function decidir(){
         break;
       case "6":
         location.href="infinc.html";
+        break;
+       case "7":
+        location.href="medi.html";
+        break;
+       case "8":
+        location.href="merc.html";
+        break;
+       case "9":
+        location.href="robele.html";
+        break;
+       case "10":
+        location.href="turi.html";
         break;
       default:
         location.href="nodef.html";
