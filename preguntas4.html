@@ -14,35 +14,35 @@
   
   <div class="container">
     <section id="p0">
-      <h3>¿Prefieres explorar las últimas innovaciones tecnológicas o encontrar maneras de optimizar los procesos existentes?</h3>
+      <h3>¿Te interesa la innovación?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Me inclino por explorar las últimas innovaciones
+        <input type="radio" value="1" name="p0" onclick="check()"> Si 
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Me interesa más optimizar lo que ya tenemos
+        <input type="radio" value="2" name="p0" onclick="check()"> No
       </label>
     </section>
         <section id="p1">
       <h3>¿Prefieres un ambiente universitario con una oferta académica diversa que incluya áreas como la administración, la biología y la tecnología?</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Si
+        <input type="radio" value="1" name="p1" onclick="check()"> Si
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> No
+        <input type="radio" value="2" name="p1" onclick="check()"> No
       </label>
     </section>
         <section id="p2">
           
-      <h3>Cuando te enfrentas a un problema, ¿tu primera reacción es buscar una solución tecnológica o analizar el proceso para encontrar una mejora?</h3>
+      <h3>¿Prefieres un ambiente universitario que promueva la vinculación con la comunidad y el desarrollo sostenible?</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> La implementación de un nuevo dispositivo es lo que más me emociona
+        <input type="radio" value="1" name="p2" onclick="check()"> Si
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Me emociona más la idea de hacer un sistema más productivo.
+        <input type="radio" value="2" name="p2" onclick="check()"> No
       </label>
 
     </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
@@ -59,5 +59,5 @@
         document.getElementById("continueButton").disabled = false;
       }
     }
-  </script>
+    </script>
 </body>
