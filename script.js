@@ -51,6 +51,7 @@ function udgW(){
 let respuestas=[];
 let totales=[];
 let pika=[];
+let con;
 
 function resultado(pregunta, respuesta){
   respuestas[pregunta]= respuesta.value;
@@ -151,7 +152,7 @@ function decidir(){
 }
 
 function llevar(){
-  let con=0;
+ 
   llev=elegir();
   console.log(llev);
   while(checar()!=0){
