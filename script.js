@@ -132,3 +132,15 @@ function llevar(){
     location.href=llev;
   }
 }
+
+function checar(){
+  let fla=0;
+  for(i=0;i<=pika.length;i++){
+    if(pika[i]==llev)
+      fla=1;
+  }
+  if(fla==1)
+    return 1;
+  else
+    return 0;
+}
