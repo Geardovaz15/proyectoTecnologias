@@ -101,7 +101,7 @@ function calcular(){
 function elegir(){
   let sig=0;
   let pre= "preguntas";
-  sig=Math.floor(Math.random() * 12);
+  sig=Math.floor(Math.random() *(12 - 1) + 1);
   pre=pre.concat(sig);
   return pre;
 }
