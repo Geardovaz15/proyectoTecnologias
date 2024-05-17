@@ -14,32 +14,32 @@
     <section id="p0">
       <h3>¿Te emociona aprender sobre las diferentes formas de vida en nuestro planetas?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Si
+        <input type="radio" value="1" name="p0" onclick="check()"> Si
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> No, aunque respeto la naturaleza
+        <input type="radio" value="2" name="p0" onclick="check()"> No, aunque respeto la naturaleza
       </label>
     </section>
         <section id="p1">
-      <h3>¿Te gustan los documentales sobre naturaleza o otros temas?</h3>
+      <h3>¿Te gustan los comumentales sobre naturaleza o otros temas?</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Documentales sobre la naturaleza y los animales
+        <input type="radio" value="1" name="p1" onclick="check()"> Documentales sobre la naturaleza y los animales
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> Documentales de otros géneros
+        <input type="radio" value="2" name="p1" onclick="check()"> Documentales de otros géneros
     </section>
         <section id="p2">
           
       <h3>¿Consideras importante dedicar tiempo y recursos para la conservación de especies?</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Absolutamente
+        <input type="radio" value="1" name="p2" onclick="check()"> Absolutamente
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> No es algo en lo que invierto mi tiempo personalmente
+        <input type="radio" value="2" name="p2" onclick="check()"> No es algo en lo que invierto mi tiempo personalmente
       </label>
 
     </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
@@ -54,7 +54,8 @@
 
       if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
-      }
+      } 
     }
-  </script>
+    </script>
 </body>
+
