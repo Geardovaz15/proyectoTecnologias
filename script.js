@@ -106,17 +106,14 @@ function elegir(){
 }
 
 function decidir(){
+  let mayor=0;
+  let posMayor=0;
   for (let i = 1; i < totales.length; i++) {
     if (totales[i] > mayor) {
         mayor = totales[i];
         posMayor = i;
     }
-function decidir(){
-  for (let i = 1; i < totales.length; i++) {
-    if (totales[i] > mayor) {
-        mayor = totales[i];
-        posMayor = i;
-    }
+  }
     switch(posMayor){
       case "1":
         location.href="quim.html";
@@ -150,7 +147,6 @@ function decidir(){
         break;
       default:
         location.href="nodef.html";
-    }
   }
 }
 
@@ -183,8 +179,10 @@ function checar(){
     if(pika[i]==llev)
       fla=1;
   }
-  if(fla==1)
+  if(fla==1){
     return 1;
-  else
+  }
+  else{
     return 0;
+  }
 }
