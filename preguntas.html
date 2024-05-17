@@ -14,64 +14,64 @@
     <section id="p0">
       <h3>1-¿Te gusta mas los objetos o las personas?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Las personas
+        <input type="radio" value="1" name="p0" onclick="check()"> Las personas
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Los objetos
+        <input type="radio" value="2" name="p0" onclick="check()"> Los objetos
       </label>
       <label>
-        <input type="radio" value="3" name="p0" onclick="resultado(0,this)"> Indiferente
+        <input type="radio" value="3" name="p0" onclick="check()"> Indiferente
       </label>
     </section>
         <section id="p1">
       <h3>2-¿Te gusta leer?</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Si, mucho
+        <input type="radio" value="1" name="p1" onclick="check()"> Si, mucho
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> Solo lo indispensable
+        <input type="radio" value="2" name="p1" onclick="check()"> Solo lo indispensable
       </label>
       <label>
-        <input type="radio" value="3" name="p1" onclick="resultado(1,this)"> No me gusta
+        <input type="radio" value="3" name="p1" onclick="check()"> No me gusta
       </label>
     </section>
         <section id="p2">
       <h3>3-¿Que piensas de las matematicas?</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Solo lo indispensable
+        <input type="radio" value="1" name="p2" onclick="check()"> Solo lo indispensable
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Me gustan los retos
+        <input type="radio" value="2" name="p2" onclick="check()"> Me gustan los retos
       </label>
       <label>
-        <input type="radio" value="3" name="p2" onclick="resultado(2,this)"> No las entiendo
+        <input type="radio" value="3" name="p2" onclick="check()"> No las entiendo
       </label>
     </section>
         <section id="p3">
       <h3>4-Si un barco se unde ¿a quien salvas?</h3>
       <label>
-        <input type="radio" value="1" name="p3" onclick="resultado(3,this)"> Perros o niños
+        <input type="radio" value="1" name="p3" onclick="check()"> Perros o niños
       </label>
       <label>
-        <input type="radio" value="2" name="p3" onclick="resultado(3,this)"> Adultos y tripulacion
+        <input type="radio" value="2" name="p3" onclick="check()"> Adultos y tripulacion
       </label>
       <label>
-        <input type="radio" value="3" name="p3" onclick="resultado(3,this)"> Solo a mi
+        <input type="radio" value="3" name="p3" onclick="check()"> Solo a mi
       </label>
     </section>
         <section id="p4">
       <h3>5-¿Jamaica u orcharta?</h3>
       <label>
-        <input type="radio" value="1" name="p4" onclick="resultado(4,this)"> Las dos son muy buenas
+        <input type="radio" value="1" name="p4" onclick="check()"> Las dos son muy buenas
       </label>
       <label>
-        <input type="radio" value="2" name="p4" onclick="resultado(4,this)"> Orchata
+        <input type="radio" value="2" name="p4" onclick="check()"> Orchata
       </label>
       <label>
-        <input type="radio" value="3" name="p4" onclick="resultado(4,this)"> Tengo problemas
+        <input type="radio" value="3" name="p4" onclick="check()"> Tengo problemas
       </label>
     </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
@@ -86,7 +86,7 @@
 
       if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
-      }
+      } 
     }
   </script>
 </body>
