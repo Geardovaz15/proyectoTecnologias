@@ -51,7 +51,7 @@ function udgW(){
 let respuestas=[];
 let totales=[];
 let pika=[];
-let con;
+let con=0;
 
 function resultado(pregunta, respuesta){
   respuestas[pregunta]= respuesta.value;
