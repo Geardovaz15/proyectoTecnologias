@@ -14,35 +14,35 @@
   
   <div class="container">
     <section id="p0">
-      <h3>¿Te sientes incómodo cuando tienes que enchufar o desenchufar aparatos eléctricos?</h3>
+      <h3>sample</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Sí, me pongo bastante tenso
+        <input type="radio" value="1" name="p0" onclick="check()"> sample 
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> No me incomoda en lo absoluto
+        <input type="radio" value="2" name="p0" onclick="check()"> sample
       </label>
     </section>
         <section id="p1">
-      <h3>¿Evitas utilizar herramientas o dispositivos que requieran electricidad debido a miedo a recibir una descarga eléctrica?</h3>
+      <h3>sample</h3>
       <label>
-        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Sí evito utilizarlas
+        <input type="radio" value="1" name="p1" onclick="check()"> sample
       </label>
       <label>
-        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> No, uso herramientas eléctricas regularmente o no me da miedo hacerlo en el futuro
+        <input type="radio" value="2" name="p1" onclick="check()"> sample
       </label>
     </section>
         <section id="p2">
           
-      <h3>¿El sonido de la electricidad, como el zumbido de los cables de alta tensión, te provoca una sensación de miedo o pánico?</h3>
+      <h3>sample</h3>
       <label>
-        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Sí, ese sonido me pone nervioso
+        <input type="radio" value="1" name="p2" onclick="check()"> sample
       </label>
       <label>
-        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> No, el sonido no me molesta
+        <input type="radio" value="2" name="p2" onclick="check()"> sample
       </label>
 
     </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar1()">Continuar</button>
+    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
@@ -57,7 +57,7 @@
 
       if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
-      }
+      } 
     }
-  </script>
+    </script>
 </body>
