@@ -48,13 +48,13 @@ function udgW(){
 
 
 //funciones para calcular resultados
-let respuestas=[];
+let respuesta;
 let totales=[];
 let pika=[];
 let con=0;
 
-function resultado(pregunta, respuesta){
-  respuestas[pregunta]= respuesta.value;
+function resultado(pregunta, respues){
+  respuesta= respues.value;
 }
 
 function calcular(){
