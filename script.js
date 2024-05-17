@@ -201,7 +201,7 @@ function llevar(){
     decidir();
   }
   else{
-    location.href=llev;
+    console.log(llev);
   }
 }
 
