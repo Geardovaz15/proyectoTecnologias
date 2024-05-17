@@ -58,8 +58,7 @@ function resultado(pregunta, respues){
 }
 
 function calcular(){
-    for(i=0;i<=respuestas.length;i++){
-    switch(respuestas[i]){
+    switch(respuesta){
       case "1":
         if(totales[0]==null){
           totales[0]=0;
@@ -122,7 +121,6 @@ function calcular(){
         break;
       default:
         console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
-      }
     }
     llevar();
 }
