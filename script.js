@@ -197,7 +197,7 @@ function llevar(){
   
   console.log(contador);
   llev=llev.concat(".html");
-  if(con==2){
+  if(contador==2){
     decidir();
   }
   else{
