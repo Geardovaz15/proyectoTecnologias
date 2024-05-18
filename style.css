@@ -5,6 +5,151 @@ body{
   margin: 0;
 }
 
+.bodyndex{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(Explanada_dv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyndex:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCuad{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUAD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCuad:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucea{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCEA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucea:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucsh{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCSH.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucsh:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucs{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCS.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucs:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucei{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCEI.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucei:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+
 header{
   text-align:center;
   min-height: 80px;
