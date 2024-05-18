@@ -182,14 +182,16 @@ function decidir(){
 function llevar(){
   
   llev=elegir();
+  console.log(pika);
   console.log(llev);
   while(checar(llev)!=0){
     llev=elegir();
   }
+  pika.push(llev);
   console.log(llev);
   console.log(pika);
   llev=llev.concat(".html");
-   pika.push(llev);
+   
   if(pika.length==2){
     decidir();
   }
