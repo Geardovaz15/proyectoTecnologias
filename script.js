@@ -213,4 +213,3 @@ function checar(llev){
     return 0;
   }
 }
-}
