@@ -180,7 +180,7 @@ function decidir(){
 }
 
 function llevar(){
- 
+  con++;
   llev=elegir();
   console.log(llev);
   while(checar(llev)!=0){
@@ -192,7 +192,7 @@ function llevar(){
     j++;
   }
   pika[j+1]=llev;
-  con++;
+  
   
   console.log(con);
   llev=llev.concat(".html");
