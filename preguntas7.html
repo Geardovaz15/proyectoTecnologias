@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -11,62 +12,48 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1- ¿ejemplo?</h3>
+      <h3>¿Prefieres seguir métodos probados o inventar soluciones nuevas y originales?</h3>
       <label>
-        <!-- Quimica --> 
-        <input type="radio" value="1" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Inventar soluciones nuevas
       </label>
       <label>
-        <!-- arte --> 
-        <input type="radio" value="2" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      <label>
-        <!-- contaduria --> 
-        <input type="radio" value="3" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- derecho --> 
-        <input type="radio" value="4" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- fisica -->
-        <input type="radio" value="5" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- informatica -->
-        <input type="radio" value="6" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- medicina -->
-        <input type="radio" value="7" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- mercadotecnia -->
-      <input type="radio" value="8" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- robotica -->
-        <input type="radio" value="9" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- turismo -->
-        <input type="radio" value="10" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-          <!-- carrera no definida -->
-        <input type="radio" value="11" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Sigo métodos que sé que funcionan
       </label>
     </section>
-    
-    <button class="my-button" id="continueButton" disabled onclick="calcular(); llevar();">Continuar</button>
-  </div>
+        <section id="p1">
+      <h3>¿Cómo describirías tu proceso para generar ideas para un proyecto o desafío?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Bastante fluido y espontáneo
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> Más metódico
+      </label>
+    </section>
+        <section id="p2">
+          
+      <h3>¿Encuentras fácil adaptarte a nuevos géneros, estilos o medios cuando creas algo?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Me adapto con facilidad
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Prefiero apegarme a lo que conozco
+      </label>
+
+    </section>
+    <button class="my-button" id="continueButton" disabled onclick="llevar(7)">Continuar</button>
+ </div>
   <script src="script.js"></script>
   <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
 
       var isChecked0 = Array.from(radios0).some(radio => radio.checked);
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
 
-      if (isChecked0) {
+      if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
       }
     }
