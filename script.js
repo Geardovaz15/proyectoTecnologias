@@ -197,7 +197,7 @@ function llevar(){
   }
 }
 
-function checar(){
+function checar(llev){
   let fla=0;
   let j=0;
   if(pika[0]=''){
