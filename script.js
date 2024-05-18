@@ -58,6 +58,7 @@ function resultado(pregunta, respues){
 }
 
 function calcular(){
+    con++;
     switch(respuesta){
       case "1":
         if(totales[0]==null){
@@ -180,7 +181,7 @@ function decidir(){
 }
 
 function llevar(){
-  con++;
+  
   llev=elegir();
   console.log(llev);
   while(checar(llev)!=0){
