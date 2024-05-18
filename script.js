@@ -122,7 +122,7 @@ function calcular(){
       default:
         console.log("En teoria no tiene que salir eso. Hay un error en value o en la respuesta");
     }
-    llevar();
+    
 }
 
 
