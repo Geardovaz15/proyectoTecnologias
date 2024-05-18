@@ -51,7 +51,7 @@ function udgW(){
 let respuesta=0;
 let totales=[];
 let pika=[];
-let contador=0;
+let contador=[];
 
 function resultado(pregunta, respues){
   respuesta= respues.value;
@@ -198,7 +198,7 @@ function llevar(){
   
   console.log(contador);
   llev=llev.concat(".html");
-  if(contador==2){
+  if(contador.length==1){
     decidir();
   }
   else{
@@ -221,6 +221,11 @@ function checar(llev){
 }
 
 function aumentar(){
-  const xd=1;
-  contador = contador + xd;
+  let j=0;
+  for(let i=0; i<=contador.length;i++){
+    contador[i]="a";
+    j++
+  }
+  contador[j+1]="";
+  
 }
