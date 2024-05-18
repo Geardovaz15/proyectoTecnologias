@@ -58,7 +58,12 @@ function resultado(pregunta, respues){
 }
 
 function calcular(){
-    con+=1;
+    if(con==1){
+      con=2;
+    }
+    else{
+      con++;
+    }
     switch(respuesta){
       case "1":
         if(totales[0]==null){
