@@ -12,55 +12,46 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1- ¿Qué actividad te resulta más atractiva o interesante?</h3>
+      <h3>1- En el caso de que te den un papel, ¿usted que haria?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="check(); resultado(0,this);"> Experimentar en un laboratorio y entender la composición de las cosas
+        <input type="radio" value="1" name="p0" onclick="check();resultado(0,this);"> Dibujar  
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="check(); resultado(0,this);"> Expresar emociones y pensamientos a través de la creación artística
-      </label>
-      <label>
-        <input type="radio" value="3" name="p0" onclick="check(); resultado(0,this);"> Manejar y analizar datos financieros
-      </label>
-      <label>
-        <input type="radio" value="4" name="p0" onclick="check(); resultado(0,this);"> Analizar y resolver problemas legales
-      </label>
-      <label>
-        <input type="radio" value="5" name="p0" onclick="check(); resultado(0,this);"> Investigar las leyes fundamentales del universo
-      </label>
-      <label>
-        <input type="radio" value="6" name="p0" onclick="check(); resultado(0,this);"> Analizar datos
-      </label>
-      <label>
-        <input type="radio" value="7" name="p0" onclick="check(); resultado(0,this);"> Ayudar a las personas
-      </label>
-      <label>
-      <input type="radio" value="8" name="p0" onclick="check(); resultado(0,this);"> Crear estrategias para promover productos
-      </label>
-      <label>
-        <input type="radio" value="9" name="p0" onclick="check(); resultado(0,this);"> Diseñar y construir robots
-      </label>
-      <label>
-        <input type="radio" value="10" name="p0" onclick="check(); resultado(0,this);"> Explorar nuevas culturas
-      </label>
-      <label>
-        <input type="radio" value="11" name="p0" onclick="check(); resultado(0,this);"> Ninguna de las anteriores
+        <input type="radio" value="2" name="p0" onclick="check();resultado(0,this);"> Escribir
       </label>
     </section>
-    
-    <button class="my-button" id="continueButton" disabled onclick="calcular(); llevar();">Continuar</button>
+    <section id="p1">
+      <h3>2-Cuando buscas informacion ¿vas directamente a lo que necesitas o lees el articulo completo?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="check();resultado(1,this);"> voy directamente a lo que necesito
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="check();resultado(1,this);"> me gusta perderme en la lectura
+      </label>
+    </section>
+    <section id="p2">
+      <h3>3-Cuando trabajas en equipo ¿Qué haces?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="check();resultado(2,this);"> Participo de forma pasiva y acato ordenes y acato ordenes
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="check();resultado(2,this);"> Tomo el liderazgo e intento hacer que todos participen
+      </label>
+    </section>
+    <button class="my-button" id="continueButton" disabled onclick="llevar(1)">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
-
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
       var isChecked0 = Array.from(radios0).some(radio => radio.checked);
-
-      if (isChecked0) {
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
+      if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
       }
     }
   </script>
 </body>
-</html>
