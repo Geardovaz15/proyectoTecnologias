@@ -51,19 +51,14 @@ function udgW(){
 let respuesta=0;
 let totales=[];
 let pika=[];
-let con=0;
+let contador=0;
 
 function resultado(pregunta, respues){
   respuesta= respues.value;
 }
 
 function calcular(){
-    if(con=="1"){
-      con="2";
-    }
-    else{
-      con++;
-    }
+    aumentar();
     switch(respuesta){
       case "1":
         if(totales[0]==null){
@@ -222,4 +217,8 @@ function checar(llev){
   else{
     return 0;
   }
+}
+
+function aumentar(){
+  contador = contador + 1;
 }
