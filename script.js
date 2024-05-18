@@ -58,7 +58,7 @@ function resultado(pregunta, respues){
 }
 
 function calcular(){
-    aumentar();
+    
     switch(respuesta){
       case "1":
         if(totales[0]==null){
@@ -132,6 +132,7 @@ function elegir(){
   let pre= "preguntas";
   sig=Math.floor(Math.random() *(12 - 1) + 1);
   pre=pre.concat(sig);
+  aumentar();
   return pre;
 }
 
