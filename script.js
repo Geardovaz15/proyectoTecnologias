@@ -195,7 +195,7 @@ function llevar(){
   pika[j+1]=llev;
   
   
-  console.log(con);
+  console.log(contador);
   llev=llev.concat(".html");
   if(con==2){
     decidir();
