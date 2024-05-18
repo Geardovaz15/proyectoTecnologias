@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Test</title>
@@ -13,62 +12,47 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1- ¿ejemplo?</h3>
+      <h3>Te interesa más estudiar el comportamiento humano o explorar las características de otras especies?</h3>
       <label>
-        <!-- Quimica --> 
-        <input type="radio" value="1" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="1" name="p0" onclick="resultado(0,this)"> Los humanos 
       </label>
       <label>
-        <!-- arte --> 
-        <input type="radio" value="2" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      <label>
-        <!-- contaduria --> 
-        <input type="radio" value="3" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- derecho --> 
-        <input type="radio" value="4" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- fisica -->
-        <input type="radio" value="5" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- informatica -->
-        <input type="radio" value="6" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- medicina -->
-        <input type="radio" value="7" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- mercadotecnia -->
-      <input type="radio" value="8" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- robotica -->
-        <input type="radio" value="9" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- turismo -->
-        <input type="radio" value="10" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-          <!-- carrera no definida -->
-        <input type="radio" value="11" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="2" name="p0" onclick="resultado(0,this)"> Me atrae más la exploración de otras especies
       </label>
     </section>
-    
-    <button class="my-button" id="continueButton" disabled onclick="calcular(); llevar();">Continuar</button>
+        <section id="p1">
+      <h3> Cuando piensas en contribuir a la ciencia, ¿prefieres relacionados con la salud o en el estudio de la biodiversidad?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="resultado(1,this)"> Salud y el bienestar humano
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="resultado(1,this)"> El estudio de la biodiversidad
+      </label>
+    </section>
+        <section id="p2">
+          
+      <h3>¿Qué prefieres: mejorar la sociedad humana o proteger la vida silvestre?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="resultado(2,this)"> Prefiero mejorar la sociedad y ayudar a las personas
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="resultado(2,this)"> Me apasiona proteger la vida silvestre y la naturaleza
+      </label>
+    </section>
+    <button class="my-button" id="continueButton" disabled onclick="llevar(10)">Continuar</button>
   </div>
   <script src="script.js"></script>
-  <script>
+    <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
 
       var isChecked0 = Array.from(radios0).some(radio => radio.checked);
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
 
-      if (isChecked0) {
+      if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
       }
     }
