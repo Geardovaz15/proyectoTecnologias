@@ -132,7 +132,6 @@ function elegir(){
   let pre= "preguntas";
   sig=Math.floor(Math.random() *(12 - 1) + 1);
   pre=pre.concat(sig);
-  aumentar();
   return pre;
 }
 
@@ -198,7 +197,7 @@ function llevar(){
   
   console.log(contador);
   llev=llev.concat(".html");
-  if(contador.length==1){
+  if(pika.length==1){
     decidir();
   }
   else{
@@ -206,26 +205,24 @@ function llevar(){
   }
 }
 
-function checar(llev){
+function checar(){
   let fla=0;
+  let j=0;
+  if(pika[0]=''){
+    pika[0]=llev;
+  }
+  else{
   for(i=0;i<=pika.length;i++){
     if(pika[i]==llev)
       fla=1;
+      j++;
   }
   if(fla==1){
     return 1;
+    }
   }
   else{
+    pika[j+1]=llev;
     return 0;
   }
-}
-
-function aumentar(){
-  let j=0;
-  for(let i=0; i<=contador.length;i++){
-    contador[i]="a";
-    j++
-  }
-  contador[j+1]="";
-  
 }
