@@ -220,5 +220,6 @@ function checar(llev){
 }
 
 function aumentar(){
-  contador = contador + 1;
+  const xd=1;
+  contador = contador + xd;
 }
