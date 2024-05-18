@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -11,62 +12,44 @@
   
   <div class="container">
     <section id="p0">
-      <h3>1- ¿ejemplo?</h3>
+      <h3>¿Te sientes incómodo cuando tienes que enchufar o desenchufar aparatos eléctricos?</h3>
       <label>
-        <!-- Quimica --> 
-        <input type="radio" value="1" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="1" name="p0" onclick="check();resultado(0,this);"> Sí, me pongo bastante tenso
       </label>
       <label>
-        <!-- arte --> 
-        <input type="radio" value="2" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      <label>
-        <!-- contaduria --> 
-        <input type="radio" value="3" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- derecho --> 
-        <input type="radio" value="4" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- fisica -->
-        <input type="radio" value="5" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- informatica -->
-        <input type="radio" value="6" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- medicina -->
-        <input type="radio" value="7" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- mercadotecnia -->
-      <input type="radio" value="8" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- robotica -->
-        <input type="radio" value="9" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-        <!-- turismo -->
-        <input type="radio" value="10" name="p0" onclick="check(); resultado(0,this);"> ejemplo
-      </label>
-      <label>
-          <!-- carrera no definida -->
-        <input type="radio" value="11" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+        <input type="radio" value="2" name="p0" onclick="check();resultado(0,this);"> No me incomoda en lo absoluto
       </label>
     </section>
-    
-    <button class="my-button" id="continueButton" disabled onclick="calcular(); llevar();">Continuar</button>
+    <section id="p1">
+      <h3>¿Evitas utilizar herramientas o dispositivos que requieran electricidad debido a miedo a recibir una descarga eléctrica?</h3>
+      <label>
+        <input type="radio" value="1" name="p1" onclick="check();resultado(1,this);"> Sí evito utilizarlas
+      </label>
+      <label>
+        <input type="radio" value="2" name="p1" onclick="check();resultado(1,this);"> No, uso herramientas eléctricas regularmente
+      </label>
+    </section>
+    <section id="p2">
+      <h3>¿El sonido de la electricidad, como el zumbido de los cables de alta tensión, te provoca una sensación de miedo o pánico?</h3>
+      <label>
+        <input type="radio" value="1" name="p2" onclick="check();resultado(2,this);"> Sí, ese sonido me pone nervioso
+      </label>
+      <label>
+        <input type="radio" value="2" name="p2" onclick="check();resultado(2,this);"> No, el sonido no me molesta
+      </label>
+    </section>
+    <button class="my-button" id="continueButton" disabled onclick="llevar(5)">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
-
+      var radios1 = document.getElementsByName('p1');
+      var radios2 = document.getElementsByName('p2');
       var isChecked0 = Array.from(radios0).some(radio => radio.checked);
-
-      if (isChecked0) {
+      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
+      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
+      if (isChecked0 && isChecked1 && isChecked2) {
         document.getElementById("continueButton").disabled = false;
       }
     }
