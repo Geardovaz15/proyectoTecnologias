@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -12,50 +11,64 @@
   
   <div class="container">
     <section id="p0">
-      <h3>¿Te emociona aprender sobre las diferentes formas de vida en nuestro planetas?</h3>
+      <h3>1- ¿ejemplo?</h3>
       <label>
-        <input type="radio" value="1" name="p0" onclick="check()"> Si
+        <!-- Quimica --> 
+        <input type="radio" value="1" name="p0" onclick="check(); resultado(0,this);"> ejemplo
       </label>
       <label>
-        <input type="radio" value="2" name="p0" onclick="check()"> No, aunque respeto la naturaleza
+        <!-- arte --> 
+        <input type="radio" value="2" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      <label>
+        <!-- contaduria --> 
+        <input type="radio" value="3" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- derecho --> 
+        <input type="radio" value="4" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- fisica -->
+        <input type="radio" value="5" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- informatica -->
+        <input type="radio" value="6" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- medicina -->
+        <input type="radio" value="7" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- mercadotecnia -->
+      <input type="radio" value="8" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- robotica -->
+        <input type="radio" value="9" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+        <!-- turismo -->
+        <input type="radio" value="10" name="p0" onclick="check(); resultado(0,this);"> ejemplo
+      </label>
+      <label>
+          <!-- carrera no definida -->
+        <input type="radio" value="11" name="p0" onclick="check(); resultado(0,this);"> ejemplo
       </label>
     </section>
-        <section id="p1">
-      <h3>¿Te gustan los comumentales sobre naturaleza o otros temas?</h3>
-      <label>
-        <input type="radio" value="1" name="p1" onclick="check()"> Documentales sobre la naturaleza y los animales
-      </label>
-      <label>
-        <input type="radio" value="2" name="p1" onclick="check()"> Documentales de otros géneros
-    </section>
-        <section id="p2">
-          
-      <h3>¿Consideras importante dedicar tiempo y recursos para la conservación de especies?</h3>
-      <label>
-        <input type="radio" value="1" name="p2" onclick="check()"> Absolutamente
-      </label>
-      <label>
-        <input type="radio" value="2" name="p2" onclick="check()"> No es algo en lo que invierto mi tiempo personalmente
-      </label>
-
-    </section>
-    <button class="my-button" id="continueButton" disabled onclick="llevar()">Continuar</button>
+    
+    <button class="my-button" id="continueButton" disabled onclick="calcular(); llevar();">Continuar</button>
   </div>
   <script src="script.js"></script>
   <script>
     function check() {
       var radios0 = document.getElementsByName('p0');
-      var radios1 = document.getElementsByName('p1');
-      var radios2 = document.getElementsByName('p2');
 
       var isChecked0 = Array.from(radios0).some(radio => radio.checked);
-      var isChecked1 = Array.from(radios1).some(radio => radio.checked);
-      var isChecked2 = Array.from(radios2).some(radio => radio.checked);
 
-      if (isChecked0 && isChecked1 && isChecked2) {
+      if (isChecked0) {
         document.getElementById("continueButton").disabled = false;
-      } 
+      }
     }
-    </script>
+  </script>
 </body>
-
