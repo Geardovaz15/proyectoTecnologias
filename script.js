@@ -58,8 +58,8 @@ function resultado(pregunta, respues){
 }
 
 function calcular(){
-    if(con==1){
-      con=2;
+    if(con=="1"){
+      con="2";
     }
     else{
       con++;
