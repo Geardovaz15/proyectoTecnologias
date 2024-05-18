@@ -198,13 +198,12 @@ function llevar(){
 }
 
 function checar(llev){
-
-    for(i=0;i<=pika.length;i++){
-      if(pika[i]==llev){
-        fla=1;
-      }
+  let fla=0;
+  for(i=0;i<=pika.length;i++){
+    if(pika[i]==llev){
+      fla=1;
     }
-  
+  }
   if(fla==1){
     return 1;
     }
