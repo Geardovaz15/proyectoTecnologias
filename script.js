@@ -187,13 +187,6 @@ function llevar(){
     llev=elegir();
   }
   console.log(llev);
-  let j=0;
-  while(j<=pika.length){
-    j++;
-  }
-  pika[j+1]=llev;
-  
-  
   console.log(pika);
   llev=llev.concat(".html");
   if(pika.length==1){
