@@ -48,10 +48,10 @@ function udgW(){
 
 
 //funciones para calcular resultados
-let respuesta;
+let respuesta=0;
 let totales=[];
 let pika=[];
-let con=[];
+let con=0;
 
 function resultado(pregunta, respues){
   respuesta= respues.value;
@@ -183,7 +183,7 @@ function llevar(){
  
   llev=elegir();
   console.log(llev);
-  while(checar()!=0){
+  while(checar(llev)!=0){
     llev=elegir();
   }
   console.log(llev);
@@ -192,15 +192,11 @@ function llevar(){
     j++;
   }
   pika[j+1]=llev;
-  if(con[0]==null){
-    con[0]=1;
-  }
-  else{
-  con[0]+=1;
-  }
+  con++;
+  
   console.log(con);
   llev=llev.concat(".html");
-  if(con[0]==2){
+  if(con==2){
     decidir();
   }
   else{
@@ -208,7 +204,7 @@ function llevar(){
   }
 }
 
-function checar(){
+function checar(llev){
   let fla=0;
   for(i=0;i<=pika.length;i++){
     if(pika[i]==llev)
