@@ -195,7 +195,7 @@ function llevar(){
   console.log(pika);
   llev=llev.concat(".html");
    
-  if(pika.length==2){
+  if(pika.length==3){
     decidir();
   }
   else{
