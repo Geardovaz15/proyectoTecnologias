@@ -191,6 +191,7 @@ function llevar(){
     j++
   }
   pika[j+1]=llev;
+  console.log(totales);
   console.log(llev);
   console.log(pika);
   llev=llev.concat(".html");
